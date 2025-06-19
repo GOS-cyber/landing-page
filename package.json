@@ -2,10 +2,11 @@
   "name": "landing-page",
   "version": "1.0.0",
   "description": "Landing page para a Atividade Ativa",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx @tailwindcss/cli -i ./public/style/main.css -o ./public/style/output.css --watch",
-    "build": "npx @tailwindcss/cli -i ./public/style/main.css -o ./public/style/output.css"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [
     "landing",
@@ -16,7 +17,11 @@
   "author": "Lucas Martins",
   "license": "ISC",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.10",
+    "@tailwindcss/vite": "^4.1.10",
+    "alpinejs": "^3.14.9",
     "tailwindcss": "^4.1.10"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
   }
 }
